@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package alevenb;
+
+message PublishMessageRequest {
+    optional string id = 1;
+}
+
+message PublishMessageResponse {
+}
+
+service MessageGenerator {
+    rpc PublishMessage(PublishMessageRequest) returns (PublishMessageResponse) {}
+}
