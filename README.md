@@ -50,4 +50,22 @@ dot -Tpng graph/build_graph.dot -o graph/build_graph.png
 ```
 cmake -B build -S . -GNinja
 cmake --build build --target help
+cmake --build build --target clean
+```
+
+
+```
+chmod +x ./scripts/clean.sh
+./scripts/clean.sh
+```
+
+
+```
+python3 -m venv venv
+source venv/
+pip3 install cmake-format
+pip install cmakelang
+pip3 freeze > requirements.txt
+cmake-format --dump-config python > .cmake-format.py # Use defaults
+cmake-format -i protos/CMakeLists.txt
 ```

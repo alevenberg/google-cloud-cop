@@ -22,5 +22,4 @@ subgraph clusterLegend {
   legendNode3 -> legendNode6 [ style = solid ];
   legendNode0 -> legendNode7;
 }
-    "node0" [ label = "main", shape = egg ];
 }
