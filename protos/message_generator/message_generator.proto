@@ -4,7 +4,6 @@ package alevenb;
 
 message PublishMessageRequest {
     optional string id = 1;
-    optinal int id2 = 2;
 }
 
 message PublishMessageResponse {

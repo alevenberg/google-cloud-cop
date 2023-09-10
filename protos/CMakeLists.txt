@@ -7,7 +7,7 @@ message("alevenb: ${CMAKE_CURRENT_LIST_DIR}")
 # For the source *.proto files
 set(PROTO_IMPORT_DIRS "${CMAKE_CURRENT_LIST_DIR}/protos")
 # For the generated *.pb.h and *.pb.cc files
-set(PROTO_BINARY_DIR "${CMAKE_CURRENT_BINARY_DIR}/gen")
+set(PROTO_BINARY_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 # Create a list of proto files
 set(PROTO_FILES message_generator/message_generator.proto)
