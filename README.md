@@ -43,7 +43,7 @@ TODO(install grpc plugin locally)
 Generate the graph
 ```
 cmake -B build -S . -GNinja
-cmake -B build --graphviz=graph/build_graph.dot 
+cmake -B .build --graphviz=graph/build_graph.dot 
 dot -Tpng graph/build_graph.dot -o graph/build_graph.png
 ```
 
@@ -69,3 +69,5 @@ pip3 freeze > requirements.txt
 cmake-format --dump-config python > .cmake-format.py # Use defaults
 cmake-format -i protos/CMakeLists.txt
 ```
+
+https://cliutils.gitlab.io/modern-cmake/chapters/features/debug.html

@@ -6,3 +6,7 @@ project(google-cloud-cpp-pubsub-demo
 
 add_subdirectory(protos)
 add_subdirectory(src)
+
+set(GRAPHVIZ_EXECUTABLES OFF)
+set(GRAPHVIZ_EXTERNAL_LIBS FALSE)
+set(GRAPHVIZ_IGNORE_TARGETS absl:: OpenSSL:: upb::)
